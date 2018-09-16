@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        div#divBanner{
+            height:100px;
+            width:auto;
+            background-color:paleturquoise;
+        }
+        div#divLeft{
+            width:15%;
+            background-color:darkviolet;
+            float:left;
+            height:600px;
+            margin:auto;
+            
+        }
+        div#divRight{
+            width:15%;
+            background-color:orchid;
+            float:right;
+            height:600px;
+            margin:auto;
+        }
+        div#divBody{
+            width:100%;
+            background-color:palegreen;
+            float:inherit;
+            height:600px;
+            margin:auto;
+        }
+        div#divFooter{
+            height:100px;
+            width:auto;
+            background-color:springgreen;
+           
+        }
+    </style>
+    <script type="text/javascript">
+        function Test() {
+            alert("Hello, JavaAcript Developer")
+        }
+        function Test1() {
+            alert("Good Bye, JavaAcript Developer")
+        }
+        function Add_number() {
+            var first_number = parseInt(document.getElementById("txt1").value);
+            var Second_number = parseInt(document.getElementById("txt2").value);
+            var result = first_number + Second_number;
+            //alert(Result);
+            document.getElementById("txt3").value = result;
+        }
+      
+    </script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id="divBanner">
+        <img src="photo/images (7).jpg" height="100" width="1330" />
+    </div>
+    <div id="divLeft">
+        <img src="photo/pic.jpg"height="200"width="200" />
+    </div>
+    <div id="divRight">
+        <img src="photo/images (12).jpg" height="600" width="200" />
+    </div>
+    <div id="divBody">
+        <input id="txt1" type="text" />
+        <input id="txt2" type="text" />
+        <input id="txt3" type="text" />
+
+        <input id="btnTest" type="button" value="Test Script" onclick="Test()" />
+        <input id="btnTest3" type="button" value="Show Result" onclick="Add_number()" />
+        <img src="photo/banner.jpg" height="550" width="933" />
+        <input id="btnTest2" type="button" value="Test Script"onclick="Test1()"/>
+
+    </div>
+    <div id="divFooter">
+        <img src="photo/images (8).jpg" height="100" width="1330" />
+        <!--<abbr MBBS></abbr>-->
+    </div>
+</body>
+</html>

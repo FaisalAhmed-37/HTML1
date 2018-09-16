@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript">
+        function PrintNumber() {
+            var i;
+            var number = parseInt(document.getElementById("txt1").value);
+            for (i = 0; i <= number; i++) {
+                document.getElementById("div1").innerHTML += i + " , ";
+            }
+        }
+            function SumNumber() {
+                var sum=0;
+                var number = parseInt(document.getElementById("txt1").value);
+                for (var i = 1; i <= number; i++) {
+                    sum = sum + i;
+                }
+                //alert("sum= "+sum);
+                document.getElementById("txt2").value=sum;
+        }
+        var confirmresult= confirm("Do You Enter Here??? ")
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <input id="txt1" type="text"/><br/>
+        <input id="txt2" type="text" /><br />
+        <input id="btn1"type="button"value="Show Number" onclick="PrintNumber()" />            
+        <input id="btn2" type="button" value="Show Sum" onclick="SumNumber()" />
+    </div>
+</body>
+</html>
