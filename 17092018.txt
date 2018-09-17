@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function CalculateAge() {
+            var curYear = new Date().getUTCFullYear();
+            var age = curYear - document.getElementById('txtYear').value;
+            document.getElementById('txtAge').value = age;
+        }
+
+        //var myArray = [];
+        //var myArray = [10, 20, 30];
+        //var myArray = new Array(3);
+        //var myArray = new Array("Rahim", "karim", "Abul");
+
+        //var myArray = [];
+        //var myArray =[10,20,30,40];
+        //document.writeln("First Element:" + myArray[0] );
+        //document.writeln("Last Element:" + myArray[myArray.length - 2]);
+        //document.write(myArray.length);
+
+        //var myArray = [];
+        //myArray[0]=10;
+        //myArray[1]=20;
+        //myArray[2] = 30;
+       // var myArray = new Array(10,20,30);
+        
+       // var EvenArray = [5, 10, 15, 20, 25,125];
+
+        //var lastelement = EvenArray.shift();
+
+        // var lastelement = EvenArray.pop();
+
+        // var lastelement=EvenArray.push(50);
+        //var lastelement = EvenArray.unshift(1);
+        //document.write(lastelement + "<br />");
+        //document.write(EvenArray.length);
+        //alert(EvenArray);
+
+        //var myarrey = ["Rahim", "Karim", "Zakir", "Riaz", "Kamal"];
+        //var sorted = myarrey.sort();
+        //document.write(sorted);
+
+        //var myarrey = [1, 2, 10, 20, 25, 3, 5];
+        //var sorted = myarrey.sort(function(a,b){return a-b}).reverse();
+        //document.write(sorted + "<br />");
+
+        //var myarrey = [1, 2,10,11,23];
+        //// myarrey.splice(2, 2, 3);
+        //myarrey.splice(3, 2, "zakir");
+        //document.write(myarrey);
+
+        //var myArrey = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        //function isEven(value, index, array) {
+        //    if (value % 2 == 0) {
+        //        return true;
+        //    }
+        //    else {
+        //        return false;
+        //    }
+
+        //}
+
+        //var myArray = ["zakir", "karim", "zakir", "hasan", "karim", "khan", "zakir", "Amin"];
+        //var result = myArray.filter(function (value, index, array) { return array.indexOf(value) == index; });
+        //document.write(result);
+
+
+        var myArray = new Array(3);
+        for (i = 0; i < 3; i++) {
+            myArray[i] = new Array(3);
+        }
+        var start = 100;
+        for (i = 0; i < 3; i++) {
+
+            for (j = 0; j < 3; j++) {
+
+                myArray[i][j] = start;
+               start = start + 1;
+            }
+        }  
+        for (i = 0; i < 3; i++) {
+
+            for (j = 0; j < 3; j++) {
+
+                document.write(myArray[i][j]+"&emsp;");
+            }
+            document.write("<br />");
+        }
+
+    </script>
+</head>
+<body>
+    <!--<div>
+        Day:<input type="text" id="txtday" /><br />
+        Month:<input type="text" id="txtMonth" /><br />
+        Year:<input type="text" id="txtYear" /><br />
+        <input type="button" value="Calculate Age" onclick="CalculateAge()" /><br />
+        <input id="txtAge" type="text" />
+     
+    </div>-->
+
+
+   
+</body>
+</html>
